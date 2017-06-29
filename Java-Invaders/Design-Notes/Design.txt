@@ -1,0 +1,38 @@
+I will use this project to learn Model View Controller (MVC) design pattern for the design of a GUI application.
+And also to learn some more GitHub concepts.
+
+Model
+-----
+The Model holds the data and performs operations on the data.
+Operations on the data are performed using void methods, with the results in the data being saved in the data rather than returned
+The model has no knowledge of the View
+
+View
+-----
+The View is the GUI code, error messages and stuff like that
+The View pumps events but the listener classes are in the controller, not the view
+
+Controller
+----------
+The Controller links the Model and the View together
+The controller listens for events from the GUI
+The controller triggers operations in the model
+The controller updates the view following changes in the model
+
+
+Simple Example
+--------------
+the Example package will contain a simple example of a simple moving square app (in preparation)
+A window will show a playing surface with a square in the middle.
+The square can be moved using the direction keys and will fire a 'bullet' when the space bar is pressed
+
+
+Moving square example
+---------------------
+
+Model
+The Model will contain the 'GameComponent' interface and the 'GamePiece' and 'Bullet' classes.
+
+
+View
+A simple jFrame with a drawing surface
